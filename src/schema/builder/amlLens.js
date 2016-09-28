@@ -20,3 +20,36 @@ export const FaultResultPathLense = R.lensPath([
   'SOAP-ENV:Body',
   'SOAP-ENV:Fault'
 ]);
+
+export const TypeAttributeLense = R.lensPath([
+  '$',
+  'type'
+]);
+
+export const IdAttributeLense = R.lensPath([
+  '$',
+  'id'
+]);
+
+export const TypeIdAttributeLense = R.lensPath([
+  '$',
+  'typeId'
+]);
+
+export const FaultCodeLense = R.lensPath([
+  'faultcode'
+]);
+
+export const FaultStringLense = R.lensPath([
+  'faultstring'
+]);
+
+export const FaultLegacyDetailLense = R.lensPath([
+  'detail',
+  'af:legacy_detail'
+]);
+
+export const FaultLegacyStringLense = R.lensPath([
+  'detail',
+  'af:legacy_faultstring'
+]);

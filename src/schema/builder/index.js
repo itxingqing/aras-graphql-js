@@ -9,5 +9,24 @@
  *  of patent rights can be found in the PATENTS file in the same directory.
  */
 
- export {unpack} from './unpack';
- export {ValidResultPathLense, FaultResultPathLense} from './amlLens';
+export {
+  unpack,
+  groupTypes,
+  getErrorFrom
+} from './unpack';
+
+export {
+  ValidResultPathLense,
+  FaultResultPathLense,
+  TypeAttributeLense,
+  IdAttributeLense,
+  TypeIdAttributeLense,
+  FaultCodeLense,
+  FaultStringLense,
+  FaultLegacyDetailLense,
+  FaultLegacyStringLense
+} from './amlLens';
+
+export {
+  AmlError
+} from './amlError';
