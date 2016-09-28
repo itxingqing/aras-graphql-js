@@ -1,0 +1,908 @@
+{
+  "SOAP-ENV:Envelope": {
+    "$": {
+      "xmlns:SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/"
+    },
+    "SOAP-ENV:Body": {
+      "Result": {
+        "Item": {
+          "$": {
+            "type": "ItemType",
+            "typeId": "450906E86E304F55A34B3C0D65C097EA",
+            "id": "4F1AC04A2B484F3ABA4E20DB63808A88"
+          },
+          "allow_private_permission": "1",
+          "auto_search": "0",
+          "class_structure": "<class id=\"4F1AC04A2B484F3ABA4E20DB63808A88\"><class name=\"Component\"\n                    id=\"0D83A764A1EA0CB66E34980C4B50F7E7\" /><class name=\"Assembly\"\n                    id=\"512FF7893DBCD6D1AC1F55B87A480934\" /><class name=\"Material\"\n                    id=\"64801C21172EEEB61692B77CB5E0ABF1\" /><class name=\"Software\"\n                    id=\"74DB7ADB15E0E70BD729E8837D0FF3C9\" /></class>",
+          "close_icon": "../images/Part.svg",
+          "config_id": {
+            "_": "4F1AC04A2B484F3ABA4E20DB63808A88",
+            "$": {
+              "keyed_name": "Part",
+              "type": "ItemType",
+              "name": "Part"
+            }
+          },
+          "core": "0",
+          "created_by_id": {
+            "_": "AD30A6D8D3B642F5A2AFED1A4B02BEFA",
+            "$": {
+              "keyed_name": "Super User",
+              "type": "User"
+            }
+          },
+          "created_on": "2015-12-24T01:04:03",
+          "default_page_size": "25",
+          "enforce_discovery": "1",
+          "generation": "1",
+          "help_url": {
+            "_": "mergedProjects/ProductEngineering/plm_Parts.htm",
+            "$": {
+              "xml:lang": "en"
+            }
+          },
+          "hide_where_used": "0",
+          "history_template": {
+            "_": "3BC16EF9E52B4F9792AB76BCE0492F29\n                ",
+            "$": {
+              "keyed_name": "Default",
+              "type": "History Template"
+            }
+          },
+          "id": {
+            "_": "4F1AC04A2B484F3ABA4E20DB63808A88",
+            "$": {
+              "keyed_name": "Part",
+              "type": "ItemType"
+            }
+          },
+          "implementation_type": "table",
+          "instance_data": "PART",
+          "is_current": "1",
+          "is_dependent": "0",
+          "is_relationship": "0",
+          "is_released": "0",
+          "is_versionable": "1",
+          "keyed_name": "Part",
+          "label": {
+            "_": "Part",
+            "$": {
+              "xml:lang": "en"
+            }
+          },
+          "label_plural": {
+            "_": "Parts",
+            "$": {
+              "xml:lang": "en"
+            }
+          },
+          "large_icon": "../images/Part.svg",
+          "major_rev": "A",
+          "manual_versioning": "0",
+          "modified_by_id": {
+            "_": "AD30A6D8D3B642F5A2AFED1A4B02BEFA",
+            "$": {
+              "keyed_name": "Super User",
+              "type": "User"
+            }
+          },
+          "modified_on": "2015-12-24T01:04:03",
+          "new_version": "1",
+          "not_lockable": "0",
+          "open_icon": "../images/Part.svg",
+          "permission_id": {
+            "_": "102D29B8CD9948BFB5F558341DF4C0F9",
+            "$": {
+              "keyed_name": "ItemType",
+              "type": "Permission"
+            }
+          },
+          "revisions": {
+            "_": "7FE395DD8B9F4E1090756A34B733D75E",
+            "$": {
+              "keyed_name": "Default",
+              "type": "Revision"
+            }
+          },
+          "show_parameters_tab": "0",
+          "structure_view": "tabs on",
+          "unlock_on_logout": "0",
+          "use_src_access": "0",
+          "name": "Part",
+          "Relationships": {
+            "Item": [
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "9A81F8A758884DA182396158904EC59D"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "9A81F8A758884DA182396158904EC59D",
+                  "$": {
+                    "keyed_name": "classification",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "0",
+                "is_hidden2": "0",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "classification"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "7DB5C4F568A8460894180B56E6546397"
+                },
+                "data_source": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "7DB5C4F568A8460894180B56E6546397",
+                  "$": {
+                    "keyed_name": "config_id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "config_id"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "074E4827E5044F8BA6B6FD546E21D271"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "decimal",
+                "id": {
+                  "_": "074E4827E5044F8BA6B6FD546E21D271",
+                  "$": {
+                    "keyed_name": "cost",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "0",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "cost"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "AC04927AA0D645DE8657E956C8449F8F"
+                },
+                "data_source": {
+                  "_": "540DD8228C8043BD905BF401D245926E",
+                  "$": {
+                    "keyed_name": "Goal Basis"
+                  }
+                },
+                "data_type": "list",
+                "id": {
+                  "_": "AC04927AA0D645DE8657E956C8449F8F",
+                  "$": {
+                    "keyed_name": "cost_basis",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "cost_basis"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "766A2E2A75024B2CB2B40BB80913BA38"
+                },
+                "data_source": {
+                  "_": "45E899CD2859442982EB22BB2DF683E5\n                        ",
+                  "$": {
+                    "keyed_name": "User",
+                    "type": "ItemType",
+                    "name": "User"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "766A2E2A75024B2CB2B40BB80913BA38",
+                  "$": {
+                    "keyed_name": "created_by_id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "created_by_id"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "192ED1ADA05E457AAFB11E708AB73EE9"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "date",
+                "id": {
+                  "_": "192ED1ADA05E457AAFB11E708AB73EE9",
+                  "$": {
+                    "keyed_name": "created_on",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "created_on"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "FEEB45F3BF1D456D896A927C2A4C7077"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "text",
+                "id": {
+                  "_": "FEEB45F3BF1D456D896A927C2A4C7077",
+                  "$": {
+                    "keyed_name": "css",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "css"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "A99038DE9DC9423C87526C4FDE79873F"
+                },
+                "data_source": {
+                  "_": "\n                            5EFB53D35BAE468B851CD388BEA46B30\n                        ",
+                  "$": {
+                    "keyed_name": "Life Cycle State",
+                    "type": "ItemType",
+                    "name": "Life Cycle State"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "A99038DE9DC9423C87526C4FDE79873F",
+                  "$": {
+                    "keyed_name": "current_state",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "current_state"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "04EB70FA8BF04F2FBA12095F56F011A2"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "04EB70FA8BF04F2FBA12095F56F011A2",
+                  "$": {
+                    "keyed_name": "description",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "description"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "F8D4D66FC73B4A69A4DDFC8F8FB70E5C"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "date",
+                "id": {
+                  "_": "F8D4D66FC73B4A69A4DDFC8F8FB70E5C",
+                  "$": {
+                    "keyed_name": "effective_date",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "effective_date"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "BD14F1CE2F544EB0912D48ED963B930C"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "BD14F1CE2F544EB0912D48ED963B930C",
+                  "$": {
+                    "keyed_name": "external_id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "external_id"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "FCC78BFA36D649F8B645C192CFCEB67F"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "FCC78BFA36D649F8B645C192CFCEB67F",
+                  "$": {
+                    "keyed_name": "external_owner",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "external_owner"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "18EEDC4C501945638E30EFAE69FAFF9E"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "18EEDC4C501945638E30EFAE69FAFF9E",
+                  "$": {
+                    "keyed_name": "external_type",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "external_type"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "8AACB4DB7C77492DBF2B01D893CD9272"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "integer",
+                "id": {
+                  "_": "8AACB4DB7C77492DBF2B01D893CD9272",
+                  "$": {
+                    "keyed_name": "generation",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "generation"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "668EB2233D4341329EE97449B0267E3A"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "boolean",
+                "id": {
+                  "_": "668EB2233D4341329EE97449B0267E3A",
+                  "$": {
+                    "keyed_name": "has_change_pending",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "0",
+                "is_hidden2": "0",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "has_change_pending"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "A301546ADFB64B0696D2D885BB98240E"
+                },
+                "data_source": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "A301546ADFB64B0696D2D885BB98240E",
+                  "$": {
+                    "keyed_name": "id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "id"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "6B1E581EF9CA4341BF837F6748CB0F38"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "boolean",
+                "id": {
+                  "_": "6B1E581EF9CA4341BF837F6748CB0F38",
+                  "$": {
+                    "keyed_name": "is_current",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "is_current"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "C3AC3B9D70974E14957B2BB7C8C2DC42"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "boolean",
+                "id": {
+                  "_": "C3AC3B9D70974E14957B2BB7C8C2DC42",
+                  "$": {
+                    "keyed_name": "is_released",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "is_released"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "879EAA0579BD4120BF3DF324ABA7A341"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "879EAA0579BD4120BF3DF324ABA7A341",
+                  "$": {
+                    "keyed_name": "item_number",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "0",
+                "is_hidden2": "0",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "item_number"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "5E9B7A441FBC4BAF8EA985D0E250F810"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "5E9B7A441FBC4BAF8EA985D0E250F810",
+                  "$": {
+                    "keyed_name": "keyed_name",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "keyed_name"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "706101BA268948ECA1BD74C8D806A7DD"
+                },
+                "data_source": {
+                  "_": "45E899CD2859442982EB22BB2DF683E5\n                        ",
+                  "$": {
+                    "keyed_name": "User",
+                    "type": "ItemType",
+                    "name": "User"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "706101BA268948ECA1BD74C8D806A7DD",
+                  "$": {
+                    "keyed_name": "locked_by_id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "locked_by_id"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "3A84A03F33A94475AB38EDD91763775E"
+                },
+                "data_source": {
+                  "$": {
+                    "is_null": "1"
+                  }
+                },
+                "data_type": "string",
+                "id": {
+                  "_": "3A84A03F33A94475AB38EDD91763775E",
+                  "$": {
+                    "keyed_name": "major_rev",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "0",
+                "is_hidden2": "0",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "major_rev"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "F95E298391874E21A825EF5B0238B1C7"
+                },
+                "data_source": {
+                  "_": "F7553D600D57489BB81309E32835AFEC",
+                  "$": {
+                    "keyed_name": "Make Buy"
+                  }
+                },
+                "data_type": "list",
+                "id": {
+                  "_": "F95E298391874E21A825EF5B0238B1C7",
+                  "$": {
+                    "keyed_name": "make_buy",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "make_buy"
+              },
+              {
+                "$": {
+                  "type": "Property",
+                  "typeId": "26D7CD4E033242148E2724D3D054B4D3",
+                  "id": "0023976D5E9A4DF9901B51F6D7E74885"
+                },
+                "data_source": {
+                  "_": "\n                            E582AB17663F4EF28460015B2BE9E094\n                        ",
+                  "$": {
+                    "keyed_name": "Identity",
+                    "type": "ItemType",
+                    "name": "Identity"
+                  }
+                },
+                "data_type": "item",
+                "id": {
+                  "_": "0023976D5E9A4DF9901B51F6D7E74885",
+                  "$": {
+                    "keyed_name": "managed_by_id",
+                    "type": "Property"
+                  }
+                },
+                "is_hidden": "1",
+                "is_hidden2": "1",
+                "is_multi_valued": "0",
+                "source_id": {
+                  "_": "4F1AC04A2B484F3ABA4E20DB63808A88\n                        ",
+                  "$": {
+                    "keyed_name": "Part",
+                    "type": "ItemType",
+                    "name": "Part"
+                  }
+                },
+                "name": "managed_by_id"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

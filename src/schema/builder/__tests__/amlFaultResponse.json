@@ -1,0 +1,20 @@
+{
+  "SOAP-ENV:Envelope": {
+    "$": {
+      "xmlns:SOAP-ENV": "http://schemas.xmlsoap.org/soap/envelope/"
+    },
+    "SOAP-ENV:Body": {
+      "SOAP-ENV:Fault": {
+        "$": {
+          "xmlns:af": "http://www.aras.com/InnovatorFault"
+        },
+        "faultcode": "0",
+        "faultstring": "No items of type ItemType found.",
+        "detail": {
+          "af:legacy_detail": "No items of type ItemType found.",
+          "af:legacy_faultstring": "Some details..."
+        }
+      }
+    }
+  }
+}
