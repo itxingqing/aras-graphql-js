@@ -28,6 +28,7 @@
   "homepage": "https://github.com/dejansiedle/aras-graphql-js#readme",
   "dependencies": {
     "data.either": "^1.4.0",
+    "data.maybe": "^1.2.2",
     "fantasy-io": "0.0.1",
     "pointfree-fantasy": "^0.1.3",
     "ramda": "^0.22.1"

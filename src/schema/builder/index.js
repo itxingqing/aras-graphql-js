@@ -11,11 +11,12 @@
 
 export {
   unpack,
-  groupTypes,
+  toDictionary,
   getErrorFrom
 } from './unpack';
 
 export {
+  ItemLense,
   ValidResultPathLense,
   FaultResultPathLense,
   TypeAttributeLense,

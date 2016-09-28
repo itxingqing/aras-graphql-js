@@ -36,13 +36,9 @@ export const TypeIdAttributeLense = R.lensPath([
   'typeId'
 ]);
 
-export const FaultCodeLense = R.lensPath([
-  'faultcode'
-]);
+export const FaultCodeLense = R.lensProp('faultcode');
 
-export const FaultStringLense = R.lensPath([
-  'faultstring'
-]);
+export const FaultStringLense = R.lensProp('faultstring');
 
 export const FaultLegacyDetailLense = R.lensPath([
   'detail',
@@ -53,3 +49,5 @@ export const FaultLegacyStringLense = R.lensPath([
   'detail',
   'af:legacy_faultstring'
 ]);
+
+export const ItemLense = R.lensProp('Item');

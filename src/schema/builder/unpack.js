@@ -9,19 +9,21 @@
  */
 import {
   AmlError,
+  ItemLense,
   ValidResultPathLense,
   FaultResultPathLense,
   FaultCodeLense,
   FaultStringLense,
+  IdAttributeLense,
   FaultLegacyDetailLense,
-  FaultLegacyStringLense,
-  TypeAttributeLense
+  FaultLegacyStringLense
 } from './';
 
 import {
   view,
   isNil,
-  groupBy
+  assoc,
+  forEach,
 } from 'ramda';
 
 import {
@@ -30,16 +32,29 @@ import {
   Either
 } from 'data.either';
 
+import {
+  Maybe,
+  Just,
+  fromNullable
+} from 'data.maybe';
+
+export function toDictionary(rootItem: JSON) : Maybe {
+  const maybeResult = fromNullable(view(ItemLense, rootItem));
+  return maybeResult.map(itemArray => {
+    const result = {};
+    forEach(item => {
+      assoc(view(IdAttributeLense, item), item, result);
+    }, itemArray);
+    return Just(result);
+  });
+}
+
 export function unpack(soapMessage: JSON) : Either {
   const result: JSON = view(ValidResultPathLense, soapMessage);
   return isNil(result) ?
     Left(view(FaultResultPathLense, soapMessage)) :
     Right(result);
 }
-
-export const groupTypes = groupBy(item => {
-  return view(TypeAttributeLense, item);
-});
 
 export function getErrorFrom(message: JSON) : AmlError {
   const result = new AmlError();

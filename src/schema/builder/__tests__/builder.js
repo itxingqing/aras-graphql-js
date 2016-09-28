@@ -12,24 +12,26 @@
 import {
   unpack,
   AmlError,
-  groupTypes,
+  toDictionary,
   getErrorFrom
 } from '../';
+import {view, lensProp} from 'ramda';
 import {expect} from 'chai';
 import {describe, it} from 'mocha';
 import amlSchema from './amlSchema.json';
 import testItemType from './itemTypePart.json';
 import faultResponse from './amlFaultResponse.json';
 
-describe('group items by item type', () => {
-  it('should result in an object with the properties ', () => {
-    const groups = unpack(amlSchema).chain( amlItem => {
-      return groupTypes(amlItem.Item);
+describe('transform into a dictionary of items', () => {
+  it('results into a dictionary object', () => {
+    const maybeDb = unpack(amlSchema).chain( rootItem => {
+      return toDictionary(rootItem);
+    });
+    const memoryDb = maybeDb.map(db => {
+      return view(lensProp('4F1AC04A2B484F3ABA4E20DB63808A88'), db);
     });
 
-    expect(groups).to.exist;
-    expect(groups.ItemType).to.exist;
-    expect(groups.RelationshipType).to.exist;
+    expect(memoryDb).to.exist;
   });
 });
 
