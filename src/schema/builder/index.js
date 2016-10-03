@@ -16,16 +16,18 @@ export {
 } from './unpack';
 
 export {
-  ItemLense,
-  ValidResultPathLense,
-  FaultResultPathLense,
-  TypeAttributeLense,
-  IdAttributeLense,
-  TypeIdAttributeLense,
-  FaultCodeLense,
-  FaultStringLense,
-  FaultLegacyDetailLense,
-  FaultLegacyStringLense
+  ItemLens,
+  ItemNameLens,
+  RelationshipsLens,
+  ValidResultPathLens,
+  FaultResultPathLens,
+  TypeAttributeLens,
+  IdAttributeLens,
+  TypeIdAttributeLens,
+  FaultCodeLens,
+  FaultStringLens,
+  FaultLegacyDetailLens,
+  FaultLegacyStringLens
 } from './amlLens';
 
 export {

@@ -9,45 +9,52 @@
  */
 import R from 'ramda';
 
-export const ValidResultPathLense = R.lensPath([
+export const ValidResultPathLens = R.lensPath([
   'SOAP-ENV:Envelope',
   'SOAP-ENV:Body',
   'Result'
 ]);
 
-export const FaultResultPathLense = R.lensPath([
+export const FaultResultPathLens = R.lensPath([
   'SOAP-ENV:Envelope',
   'SOAP-ENV:Body',
   'SOAP-ENV:Fault'
 ]);
 
-export const TypeAttributeLense = R.lensPath([
+export const TypeAttributeLens = R.lensPath([
   '$',
   'type'
 ]);
 
-export const IdAttributeLense = R.lensPath([
+export const IdAttributeLens = R.lensPath([
   '$',
   'id'
 ]);
 
-export const TypeIdAttributeLense = R.lensPath([
+export const TypeIdAttributeLens = R.lensPath([
   '$',
   'typeId'
 ]);
 
-export const FaultCodeLense = R.lensProp('faultcode');
+export const FaultCodeLens = R.lensProp('faultcode');
 
-export const FaultStringLense = R.lensProp('faultstring');
+export const FaultStringLens = R.lensProp('faultstring');
 
-export const FaultLegacyDetailLense = R.lensPath([
+export const FaultLegacyDetailLens = R.lensPath([
   'detail',
   'af:legacy_detail'
 ]);
 
-export const FaultLegacyStringLense = R.lensPath([
+export const FaultLegacyStringLens = R.lensPath([
   'detail',
   'af:legacy_faultstring'
 ]);
 
-export const ItemLense = R.lensProp('Item');
+export const ItemLens = R.lensProp('Item');
+
+export const ItemNameLens = R.lensProp('name');
+
+export const RelationshipsLens = R.lensPath([
+  'Relationships',
+  'Item'
+]);
